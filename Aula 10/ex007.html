@@ -14,16 +14,23 @@
         font: normal 18pt Verdana;
         width: 100px;
     }
-    div#res{
+    #res{
+        display: block;
         margin-top: 20px;
+        background: gray;
+        width: 400px;
+        height: 30px;
     }
 </style>
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+   
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="reset" value="Limpar">
+        <output id="res"></output>
+  
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')

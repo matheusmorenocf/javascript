@@ -9,7 +9,7 @@
         body{
             background: black;
             color: white;
-            font: normal 10pt Verdana;
+            font: normal 1.5em Verdana;
     
         }
     </style>
@@ -21,13 +21,20 @@
     <div class="msg">Clique em min</div>
     <script>
         var corpo = window.document.body
+
+        corpo.style.background = 'gray'
+
         var p1 = window.document.getElementsByTagName('p')[1]
-        /*var d = window.document.getElementById('msg')
-        d.style.background = 'green'
-        d.InnetText = 'Estou aguardando..'
-        */
-       var d = window.document.querySelector('div.msg')
-       d.style.color = 'blue'
+
+        //p1.innerText = 'Testando...'
+
+        //var d = window.document.getElementsByClassName('msg')[0]
+        //d.style.color = 'blue'
+        //d.innerText = 'Olá..!'
+
+        var d = window.document.querySelector('div.msg')
+        d.innerText = 'Teste'
+        d.style.background = 'red'
      
         
 
