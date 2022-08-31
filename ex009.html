@@ -18,7 +18,11 @@
             if (txt1.value == 'Brasil'){
                 resp.innerHTML = `Seu pais de origem é ${txt1.value}. Você é Brasileiro!`
             } else {
-                resp.innerHTML = `Seu pais de origem é ${txt1.value}. Você é Estrangeiro!`
+                if (txt1.value == 'EUA'){
+                    resp.innerHTML = `Seu pais de origem é ${txt1.value}. Você é Americano!`
+                } else{
+                    resp.innerHTML = `Seu pais de origem é ${txt1.value}. Você é Estrangeiro!`
+                }
             }
         }
     </script>
