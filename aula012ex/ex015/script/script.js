@@ -10,7 +10,7 @@ function verificar(){
         var idade = ano - Number(fano.value)
         var gênero = ''
         //Baixar imagens para inserir no codigo...
-        //var img = document.createElement('img')
+        //var img = document.createElement('img') //Comando para inserir a imagem sem ter a tag <img> no HTML
         //img.setAttribute('id', 'foto')
         if(fsex[0].checked){
             gênero = 'Homem'
