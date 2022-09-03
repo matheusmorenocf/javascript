@@ -20,7 +20,10 @@ section{
     margin: auto;
     box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.336);
 }
-
+div#resp{
+    margin-top: 15px;
+    font-size: 1.2em;
+}
 
 footer{
     color: white;
