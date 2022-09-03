@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Impostos</h1>
+    </header>
+    <section>
+        <div id="conteudo">
+            <p>
+                Preço com ICMS e sem IPI (R$)
+                <input type="number" name="precoB" id="precoB">
+            </p>
+            <p>
+                Percentual IPI (%)
+                <input type="number" name="percIpi" id="percIpi">
+                R$:<output id="valorIpi"></output>
+            </p>
+            <p>
+                Percentual ICMS (%)
+                <input type="number" name="percIcms" id="percIcms">
+                R$:<output id="valorIcms"></output>
+            </p>
+            <p>
+                PIS / COFINS (1.65% / 7.60%)
+                <output id="piscoff"></output>
+            </p>
+            <p>
+                Preço Bruto (R$)
+                <output id="precoBruto"></output>
+            </p>
+            <p>
+                Preço s/ICMS (R$)
+                <output id="precoSicms"></output>
+            </p>
+            <p>
+                Preço Líquido (R$)
+                <output id="precoLiquido"></output>
+            </p>
+
+            <input id="botao" type="button" value="Calcular" onclick="calcular()">
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="calculadora.js"></script>
+</body>
+</html>
