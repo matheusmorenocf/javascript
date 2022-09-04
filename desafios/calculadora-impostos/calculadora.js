@@ -12,6 +12,4 @@ function calcular(){
         document.getElementById('precoSicms').innerHTML = Number(preco - (preco * (icms/100))).toFixed(2);
         document.querySelector('output#liquido').innerHTML = Number(preco - (preco*(9.25/100)) - (preco * (icms/100))).toFixed(2);
     }
-    
-
 }
