@@ -20,9 +20,42 @@
     </header>
     <h1>Impostos</h1>
     <section class="conteudo">
-        <div>
-
-        </div>
+        <form action="#" method="post">
+            <div>
+                <label for="txtpreco">Preço com ICMS e sem IPI</label>
+                <input type="number" step="0.01" name="preco" id="txtpreco">
+            </div>
+            <div>
+                <label for="percipi">Percentual IPI</label>
+                <input type="number" step="0.01" name="percipi" id="percipi">
+                <output class="saida" step="0.01" id="valorIpi"></output>
+            </div>
+            <div>
+                <label for="percicms">Percentual ICMS</label>
+                <input type="number" step="0.01" name="percicms" id="percicms">
+                <output class="saida" id="valorIcms"><p></p></output>
+            </div>
+            <div>
+                <label for="piscoffins">PIS / COFFINS</label>
+                <output class="saida" id="piscoffins"></output>
+            </div>
+            <div>
+                <label for="bruto">Preço Bruto</label>
+                <output class="saida" id="bruto"></output>
+            </div>
+            <div>
+                <label for="precoSicms">Preço sem ICMS</label>
+                <output class="saida" id="precoSicms"></output>
+            </div>
+            <div>
+                <label for="liquido">Preço Líquido</label>
+                <output class="saida" id="liquido"></output>
+            </div>
+            <div id="botoes">
+                <input type="submit" id="calc" value="Calcular" formaction="javascript:calcular()">
+                <input type="reset" id="reset" value="Limpar">
+            </div>
+        </form>
     </section>
 
     <script src="calculadora.js"></script>
