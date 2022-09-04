@@ -38,7 +38,7 @@ header{
 .conteudo{
     margin: auto;
     margin-top: 15px;
-    max-width: 400px;
+    max-width: 388px;
     background: rgba(144, 238, 149, 0.178);
     font-size: 0.9em;
     padding: 5px;
@@ -98,4 +98,14 @@ input#reset{
     color: white;
     border: none;
     padding: 4px 8px;
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background: #1d1e20;
+    padding: 10px;
+}
+footer > p, strong{
+    font-size: 15px;
 }
