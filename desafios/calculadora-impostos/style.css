@@ -100,6 +100,14 @@ input#calc{
     border: none;
     padding: 4px 8px;
 }
+input#calc:hover{
+    background: rgb(0, 255, 0);
+    cursor: pointer;
+}
+input#reset:hover{
+    background: red;
+    cursor: pointer;
+}
 input#reset{
     background: rgb(128, 0, 0);
     color: white;
